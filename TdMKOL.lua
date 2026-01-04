@@ -333,15 +333,15 @@ local function handle_post_match()
             title = (match.Status == "WIN" and "🏆 TRIUMPH" or "💀 DEFEAT"),
             color = (match.Status == "WIN" and 0x2ecc71 or 0xe74c3c),
             description =
-                "### 📋 Match Overview\n" ..
-                "> **Status:** `" .. match.Status .. "`\n" ..
-                "> **Time:** `" .. match.Time .. "`\n" ..
-                "> **Current Level:** `" .. match.Level .. "`\n" ..
-                "> **Wave:** `" .. match.Wave .. "`\n",
+                "###  Цикл окончен\n" ..
+                "> **Итог:** `" .. match.Status .. "`\n" ..
+                "> **Время:** `" .. match.Time .. "`\n" ..
+                "> **ЛВЛ:** `" .. match.Level .. "`\n" ..
+                "> **Волна:** `" .. match.Wave .. "`\n",
                 
             fields = {
                 {
-                    name = "✨ Rewards",
+                    name = " получено",
                     value = "```ansi\n" ..
                             "[2;33mCoins:[0m +" .. match.Coins .. "\n" ..
                             "[2;34mGems: [0m +" .. match.Gems .. "\n" ..
@@ -349,17 +349,17 @@ local function handle_post_match()
                     inline = false
                 },
                 {
-                    name = "🎁 Bonus Items",
+                    name = "Дополнительно",
                     value = bonus_string,
                     inline = true
                 },
                 {
-                    name = "📊 Session Totals",
+                    name = "Общая статистика",
                     value = "```py\n# Total Amount\nCoins: " .. current_total_coins .. "\nGems:  " .. current_total_gems .. "```",
                     inline = true
                 }
             },
-            footer = { text = "Logged for " .. local_player.Name .. " • TDS AutoStrat" },
+            footer = { text = "Logged for " .. local_player.Name .. " .t" },
             timestamp = DateTime.now():ToIsoDate()
         }}
     }
@@ -386,27 +386,27 @@ local function log_match_start()
     local start_payload = {
         username = "TDS AutoStrat",
         embeds = {{
-            title = "🚀 **Match Started Successfully**",
-            description = "The AutoStrat has successfully loaded into a new game session and is beginning execution.",
+            title = " **Игра найдена**",
+            description = "(он ещё не сгорел)",
             color = 3447003,
             fields = {
                 {
-                    name = "🪙 Starting Coins",
+                    name = "шекеля",
                     value = "```" .. tostring(start_coins) .. " Coins```",
                     inline = true
                 },
                 {
-                    name = "💎 Starting Gems",
+                    name = "примогемы",
                     value = "```" .. tostring(start_gems) .. " Gems```",
                     inline = true
                 },
                 {
-                    name = "Status",
-                    value = "🟢 Running Script",
+                    name = "статус",
+                    value = " Script Loaded ,url attached",
                     inline = false
                 }
             },
-            footer = { text = "Logged for " .. local_player.Name .. " • TDS AutoStrat" },
+            footer = { text = "Logged for " .. local_player.Name .. "." },
             timestamp = DateTime.now():ToIsoDate()
         }}
     }
@@ -1433,5 +1433,6 @@ end
 start_back_to_lobby()
 start_anti_afk()
 start_rejoin_on_disconnect()
+
 
 return TDS
