@@ -1,0 +1,187 @@
+loadstring(game:HttpGet("https://flowauth.net/v1/loaders/6b9fb1131dfcbd254e6e46019e8bf091.lua"))()
+task.wait(5)
+
+-- [ Settings ] --
+getgenv().AutoDJ = true
+getgenv().AutoMercenary = true
+-- [ End Settings ] --
+
+local TDS = loadstring(game:HttpGet("https://getaether.cc/loader.lua"))()
+
+TDS:Loadout("DJ Booth", "Hacker", "Gatling Gun", "Scout", "Ranger")
+TDS:Mode("Act4")
+
+
+TDS:Place("Scout", 3.4058122634887695, 0.9999849200248718, -25.256784439086914)
+TDS:Upgrade(1)
+TDS:Upgrade(1)
+TDS:Place("Scout", 6.430719375610352, 0.999983012676239, -24.958011627197266)
+TDS:Upgrade(2)
+TDS:Upgrade(2)
+TDS:Place("Scout", 3.4058122634887695, 0.9999809861183167, -22.216785430908203)
+TDS:Upgrade(3)
+TDS:Upgrade(3)
+
+task.wait(3)
+TDS:Loadout("DJ Booth", "Hacker", "Gatling Gun", "Mercenary Base", "Ranger")
+
+TDS:Ready()
+TDS:UnlockTimeScale(2)
+TDS:TimeScale(2)
+
+-- [ Wave 1 ] --
+TDS:Upgrade(3)
+
+-- [ Wave 3 ] --
+TDS:Upgrade(1)
+
+-- [ Wave 4 ] --
+TDS:Upgrade(2)
+
+-- [ Wave 6 ] --
+TDS:Place("Gatling Gun", -0.714411199092865, 1.060223937034607, -9.163329124450684)
+
+-- [ Wave 7 ] --
+TDS:Upgrade(4)
+
+-- [ Wave 9 ] --
+TDS:Upgrade(4)
+
+-- [ Wave 11 ] --
+TDS:Upgrade(4)
+TDS:Upgrade(1)
+TDS:Upgrade(3)
+
+-- [ Wave 12 ] --
+TDS:Upgrade(2)
+
+-- [ Wave 13 ] --
+TDS:Place("DJ Booth", -3.650881290435791, 1.0386496782302856, -13.166467666625977)
+TDS:Upgrade(5)
+TDS:Upgrade(5)
+TDS:Upgrade(5)
+TDS:SetOption(5, "Track", "Green")
+
+-- [ Wave 14 ] --
+TDS:Upgrade(4)
+TDS:Place("Mercenary Base", -3.6786561012268066, 0.9999942779541016, 22.554428100585938)
+
+-- [ Wave 15 ] --
+TDS:Upgrade(6)
+TDS:Upgrade(6)
+
+-- [ Wave 16 ] --
+TDS:Upgrade(6)
+TDS:Upgrade(6)
+TDS:SetOption(6, "Unit 1", "Riot Guard")
+TDS:SetOption(6, "Unit 3", "Riot Guard")
+TDS:SetOption(6, "Unit 2", "Riot Guard")
+
+-- [ Wave 17 ] --
+TDS:Upgrade(4)
+
+-- [ Wave 18 ] --
+TDS:Place("Mercenary Base", 3.4325942993164062, 0.9999982714653015, 22.87681770324707)
+
+-- [ Wave 19 ] --
+TDS:Upgrade(7)
+TDS:Upgrade(7)
+TDS:Upgrade(7)
+TDS:Upgrade(7)
+TDS:SetOption(7, "Unit 1", "Riot Guard")
+TDS:SetOption(7, "Unit 2", "Riot Guard")
+TDS:SetOption(7, "Unit 3", "Riot Guard")
+TDS:Place("Mercenary Base", -8.193872451782227, 1.0609875917434692, -8.874517440795898)
+TDS:Upgrade(8)
+TDS:Upgrade(8)
+TDS:Upgrade(8)
+TDS:Upgrade(8)
+TDS:SetOption(8, "Unit 1", "Riot Guard")
+TDS:SetOption(8, "Unit 2", "Riot Guard")
+TDS:SetOption(8, "Unit 3", "Riot Guard")
+TDS:Upgrade(6)
+TDS:Upgrade(7)
+
+-- [ Wave 20 ] --
+TDS:Upgrade(8)
+
+-- [ Wave 22 ] --
+TDS:Upgrade(4)
+
+-- [ Wave 23 ] --
+TDS:Upgrade(6)
+TDS:Upgrade(7)
+TDS:Upgrade(8)
+TDS:Upgrade(5)
+TDS:Upgrade(5)
+
+-- [ Wave 24 ] --
+TDS:SetOption(5, "Track", "Red")
+
+-- [ Wave 25 ] --
+TDS:Place("Ranger", -1.6879738569259644, 5.9212646484375, -1.9258742332458496)
+TDS:Upgrade(9)
+TDS:Upgrade(9)
+TDS:Upgrade(9)
+TDS:Upgrade(9)
+TDS:Place("Ranger", -0.06645750999450684, 5.9212646484375, -4.484714508056641)
+TDS:Upgrade(10)
+TDS:Upgrade(10)
+TDS:Upgrade(10)
+TDS:Upgrade(10)
+
+-- [ Wave 26 ] --
+TDS:Place("Ranger", 1.860655665397644, 5.897640228271484, -2.0559463500976562)
+TDS:Upgrade(11)
+TDS:Upgrade(11)
+TDS:Upgrade(11)
+TDS:Upgrade(11)
+TDS:Place("Ranger", 3.759669780731201, 5.9212646484375, -4.506083011627197)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+TDS:Upgrade(12)
+
+-- [ Wave 27 ] --
+TDS:Place("Ranger", -2.216064453125, 7.976963996887207, -6.634318828582764)
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:Upgrade(13)
+TDS:Place("Ranger", 0.3058032989501953, 7.976963996887207, -8.331900596618652)
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+TDS:Upgrade(14)
+
+-- [ Wave 28 ] --
+TDS:Place("Ranger", 2.6439948081970215, 7.976964473724365, -6.389101982116699)
+TDS:Upgrade(15)
+TDS:Upgrade(15)
+TDS:Upgrade(15)
+TDS:Upgrade(15)
+TDS:Place("Ranger", -19.006290435791016, 5.921395301818848, -12.544219970703125)
+TDS:Upgrade(16)
+TDS:Upgrade(16)
+TDS:Upgrade(16)
+TDS:Upgrade(16)
+
+-- [ Wave 29 ] --
+TDS:Place("Hacker", -3.7762348651885986, 0.9999892711639404, -25.750398635864258)
+TDS:Upgrade(17)
+TDS:Upgrade(17)
+TDS:Upgrade(17)
+TDS:Upgrade(17)
+TDS:Upgrade(17, 2)
+
+-- [ Wave 30 ] --
+TDS:TimeScale(1)
+TDS:Place("Hacker", -9.145805358886719, 1.0000019073486328, -25.974485397338867)
+TDS:Upgrade(18)
+TDS:Upgrade(18)
+TDS:Upgrade(18)
+TDS:Upgrade(18)
+TDS:Upgrade(18, 2)
+TDS:Ability(18, "Hologram Tower", {towerPosition = Vector3.new(-3.7215161323547363, 1.0463122129440308, -5.009292125701904), towerToClone = 4}, true)
+TDS:Ability(17, "Hologram Tower", {towerPosition = Vector3.new(-4.2561936378479, 1.0377670526504517, 17.729827880859375), towerToClone = 6}, true)
+TDS:Ability(17, "Hologram Tower", {towerPosition = Vector3.new(5.1540374755859375, 1.0377665758132935, 16.96487808227539), towerToClone = 7}, true)
